@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Vite additional practice</title>
+  </head>
+  <body>
+    <div class="web-tile">
+      <h1>Welcome to your local clothing shop</h1>
+    </div>
+
+    <div class="inputs-container">
+      <div class="input-card">
+        <div class="label">
+          <label for="p-name">Product name:</label>
+        </div>
+
+        <input type="text" id="p-name" placeholder="Your product..." />
+      </div>
+
+      <div class="input-card">
+        <div class="label">
+          <label for="p-price">Product price:</label>
+        </div>
+
+        <input type="text" id="p-price" placeholder="Your price..." />
+      </div>
+
+      <div class="input-card">
+        <div class="label">
+          <label for="p-category">Product category:</label>
+        </div>
+
+        <select name="product" id="p-category">
+          <!-- <option value="choose">--Please choose a category--</option> -->
+          <option value="mens">Mens</option>
+          <option value="womans">Womans</option>
+          <option value="youth">Youth</option>
+        </select>
+      </div>
+
+      <div class="buttons-containes">
+        <button id="add-btn">Add</button>
+        <button id="log-all-btn">Log all products</button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
