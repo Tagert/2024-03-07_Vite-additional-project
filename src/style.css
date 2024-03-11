@@ -16,7 +16,7 @@ body {
   height: 100vh;
 }
 
-h1 {
+.web-title h1 {
   padding: 1rem;
   text-align: center;
 }
@@ -28,4 +28,38 @@ h1 {
   align-items: center;
   height: 30vh;
   gap: 1rem;
+}
+
+.product-container {
+  display: flex;
+  padding: 2rem;
+}
+.product-container .products-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+.product-container .products-wrapper .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-width: 10rem;
+  min-height: 15rem;
+  border: 0.1rem solid darkblue;
+  border-radius: 0.6rem;
+  padding: 1rem;
+}
+.product-container .products-wrapper .wrapper h1 {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+.product-container .products-wrapper .wrapper h3 {
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+}
+.product-container .products-wrapper .wrapper h4 {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  letter-spacing: 0.05rem;
 }/*# sourceMappingURL=style.css.map */

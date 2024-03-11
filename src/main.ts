@@ -1,6 +1,7 @@
 import { Product } from "./features/product/Product";
 import { Store } from "./features/store/Store";
 import { ProductCategoryType } from "./features/product/product.types";
+import { addProductsToScreen } from "./utils/dom";
 
 const title = document.getElementById("p-name") as HTMLInputElement;
 const price = document.getElementById("p-price") as HTMLInputElement;
@@ -19,6 +20,8 @@ addBtn.addEventListener("click", () => {
   });
 
   clothingShop.insertProduct(product.getProduct());
+
+  addProductsToScreen(clothingShop.getAllProducts());
 });
 
 logAllBtn.addEventListener("click", () => {
